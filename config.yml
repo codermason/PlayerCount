@@ -1,0 +1,25 @@
+#PlayerCount config file
+
+#Servers to get player count from
+servers:
+  - sg
+  - sg1
+  - sg2
+  - sg3
+  - sg4
+
+#Time between each update of player count in seconds
+update_interval: 20
+
+#Commands that trigger the message
+commands:
+  - who
+  - list
+  - players
+
+#Should the player receive the message when they log in?
+on_login: true
+
+#Message to send to the player
+#Use %players% to replace the count with
+message: '&4Total Survival Games players: %players%'
